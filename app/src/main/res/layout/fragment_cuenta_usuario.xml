@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyectofinal.app.activities.fragments.CuentaUsuarioFragment"
+    android:background="@color/colorBlanco"
+    android:orientation="vertical"
+    android:gravity="center">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center">
+
+           <ImageView
+               android:id="@+id/imgv_usuario"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/avatar_user"
+               android:padding="15dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/et_nombre_usuario"
+                   android:textColor="@color/colorPrincipal"
+                   android:textStyle="bold"
+                   android:textAlignment="textEnd"
+                   android:textSize="18dp"
+                   android:layout_margin="5dp"/>
+
+               <TextView
+                   android:id="@+id/tv_nombre_usuario"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="chrisseduu13mc"
+                   android:textColor="@color/colorNegro"
+                   android:textStyle="bold"
+                   android:textAlignment="textStart"
+                   android:textSize="16dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginRight="5dp"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/et_nombre"
+                   android:textColor="@color/colorPrincipal"
+                   android:textStyle="bold"
+                   android:textAlignment="textEnd"
+                   android:textSize="18dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"/>
+
+               <TextView
+                   android:id="@+id/tv_nombre"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/dev_chris"
+                   android:textColor="@color/colorNegro"
+                   android:textStyle="bold"
+                   android:textAlignment="textStart"
+                   android:textSize="16dp"
+                   android:layout_marginRight="5dp"/>
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tv_nombre_nivel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Nivel 5"
+               android:textColor="@color/colorTomate"
+               android:textStyle="bold"
+               android:textAlignment="center"
+               android:textSize="18dp"
+               android:layout_margin="5dp"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+
+               <Button
+                   android:id="@+id/btn_editar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/btn_editar"
+                   android:textSize="14dp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/colorPrincipal"
+                   android:background="@drawable/btn_borde_solido"/>
+
+               <Button
+                   android:id="@+id/btn_aprender"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/btn_aprender"
+                   android:textSize="14dp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="15dp"
+                   android:paddingLeft="7.5dp"
+                   android:paddingRight="7.5dp"
+                   android:background="@drawable/btn_con_fondo"/>
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="43dp"
+               android:src="@mipmap/linea_verde" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Tu avance es del:"
+                   android:textColor="@color/colorVerdeAlternativo"
+                   android:textStyle="bold"
+                   android:textAlignment="center"
+                   android:textSize="18dp"
+                   android:layout_margin="5dp"/>
+
+               <TextView
+                   android:id="@+id/et_porcentaje"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="100%"
+                   android:textColor="@color/colorTomate"
+                   android:textStyle="bold"
+                   android:textAlignment="center"
+                   android:textSize="20dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="10dp"/>
+
+               <ProgressBar
+                   android:id="@+id/progreso_idioma"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"/>
+
+               <ImageButton
+                   android:id="@+id/btn_estadisticas"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_estadisticas"
+                   android:padding="5dp"
+                   android:background="@color/colorGris"/>
+
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="43dp"
+               android:src="@mipmap/linea_verde" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Tu meta diaria es:"
+               android:textAlignment="textStart"
+               android:textColor="@color/colorPrincipal"
+               android:textStyle="bold"
+               android:textSize="18dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginLeft="25dp"
+               />
+
+           <RadioGroup
+               android:id="@+id/radioGroup"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginBottom="20dp">
+
+               <RadioButton
+                   android:id="@+id/rbtn_15"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="15 minutos."
+                   android:textColor="@color/colorPrincipal"
+                   android:textSize="16dp"
+                   android:buttonTint="@color/colorVerdeAlternativo"
+                   android:padding="6dp"
+                   android:layout_marginLeft="10dp"
+                   android:checked="true"/>
+
+               <RadioButton
+                   android:id="@+id/rbtn_30"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="30 minutos."
+                   android:textColor="@color/colorPrincipal"
+                   android:textSize="16dp"
+                   android:buttonTint="@color/colorVerdeAlternativo"
+                   android:padding="6dp"
+                   android:layout_marginLeft="10dp"/>
+
+               <RadioButton
+                   android:id="@+id/rbtn_45"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="45 minutos."
+                   android:textColor="@color/colorPrincipal"
+                   android:textSize="16dp"
+                   android:buttonTint="@color/colorVerdeAlternativo"
+                   android:padding="6dp"
+                   android:layout_marginLeft="10dp"/>
+
+               <RadioButton
+                   android:id="@+id/rbtn_60"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="60 minutos."
+                   android:textColor="@color/colorPrincipal"
+                   android:textSize="16dp"
+                   android:buttonTint="@color/colorVerdeAlternativo"
+                   android:padding="6dp"
+                   android:layout_marginLeft="10dp"/>
+           </RadioGroup>
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="43dp"
+               android:src="@mipmap/linea_verde" />
+
+           <Button
+               android:id="@+id/cerrar_sesion"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorVerdeAlternativo"
+               android:text="¡Cerrar Sesion!"
+               android:textSize="14dp"
+               android:background="@drawable/btn_sin_fondo"
+               android:drawableRight="@drawable/ic_salir"
+               android:drawablePadding="10dp"
+               android:gravity="center"
+               android:layout_marginBottom="20dp"/>
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

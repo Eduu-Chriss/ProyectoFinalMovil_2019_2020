@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyectofinal.app.activities.PrincipalActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBlanco"
+    android:id="@+id/activity_principal">
+
+    <!-- Tool Bar-->
+    <include
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="-104dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <!-- Layout Principal -->
+    <FrameLayout
+        android:id="@+id/contenedor_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

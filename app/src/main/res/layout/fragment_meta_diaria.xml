@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyectofinal.app.activities.fragments.MetaDiariaFragment"
+    android:background="@color/colorBlanco"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu meta diaria es:"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrincipal"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 minutos."
+            android:textColor="@color/colorPrincipal"
+            android:textSize="16dp"
+            android:buttonTint="@color/colorVerdeAlternativo"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 minutos."
+            android:textColor="@color/colorPrincipal"
+            android:textSize="16dp"
+            android:buttonTint="@color/colorVerdeAlternativo"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45 minutos."
+            android:textColor="@color/colorPrincipal"
+            android:textSize="16dp"
+            android:buttonTint="@color/colorVerdeAlternativo"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="60 minutos."
+            android:textColor="@color/colorPrincipal"
+            android:textSize="16dp"
+            android:buttonTint="@color/colorVerdeAlternativo"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+
+</LinearLayout>

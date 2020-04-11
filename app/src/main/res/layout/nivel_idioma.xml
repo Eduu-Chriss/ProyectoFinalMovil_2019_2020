@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlanco"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/btn_nivel"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_nivel"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/ibtn_tema_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="101dp"
+                    android:background="@color/colorBlanco"
+                    android:src="@mipmap/ic_saludo" />
+
+                <ProgressBar
+                    android:id="@+id/progreso_tema_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:background="@color/colorGris"/>
+
+                <TextView
+                    android:id="@+id/tv_tema_1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Saludos"
+                    android:textColor="@color/colorVerdeAlternativo"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/ibtn_tema_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/colorBlanco"
+                    android:src="@mipmap/ic_comida"/>
+
+                <ProgressBar
+                    android:id="@+id/progreso_tema_2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:background="@color/colorGris"/>
+
+                <TextView
+                    android:id="@+id/tv_tema_2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="Alimentos"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorVerdeAlternativo"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/ibtn_tema_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/colorBlanco"
+                    android:src="@mipmap/ic_cuerpo"/>
+                <ProgressBar
+                    android:id="@+id/progreso_tema_3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:background="@color/colorGris"/>
+
+                <TextView
+                    android:id="@+id/tv_tema_3"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="Cuerpo Humano"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorVerdeAlternativo"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/ibtn_tema_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/colorBlanco"
+                    android:src="@mipmap/ic_numeros"/>
+
+                <ProgressBar
+                    android:id="@+id/progreso_tema_4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:background="@color/colorGris"/>
+
+                <TextView
+                    android:id="@+id/tv_tema_4"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="Números"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorVerdeAlternativo"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

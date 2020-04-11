@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JaguarPFM</string>
+
+    <!-- nombres de botones -->
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_registrarme">Registrarme</string>
+    <string name="btn_recuperar">¡Olvide mi contraseña!</string>
+    <string name="btn_iniciar">Iniciar</string>
+    <string name="btn_Gramatica">Gramatica</string>
+    <string name="btn_verificar">Verificar</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_tengo_cuenta">¡Ya tengo una cuenta!</string>
+
+    <!-- nombres de Cajas de texto -->
+    <string name="et_nombre_usuario">Correo:</string>
+    <string name="et_contrasena">Contraseña:</string>
+    <string name="et_repetir">Repita su contraseña:</string>
+    <string name="et_nombre">Nombre:</string>
+
+    <!-- nombres de etiquetas -->
+    <string name="tv_titulo_formulario">Formulario de Registro</string>
+    <string name="tv_porque_aprender">¿Por qué deseas aprender este idioma?</string>
+
+    <!-- nombres de botones de radio -->
+    <string name="rbtn_estudios">Estudios.</string>
+    <string name="rbtn_cultura">Cultura.</string>
+    <string name="rbtn_habilidad">Nueva habilidad.</string>
+    <string name="rbtn_otro">Otro.</string>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jaguar</string>
+
+    <!-- nombres de botones -->
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_registrarme">Registrarme</string>
+    <string name="btn_recuperar">¡Olvide mi contraseña!</string>
+    <string name="btn_iniciar">Iniciar</string>
+    <string name="btn_Gramatica">Gramatica</string>
+    <string name="btn_verificar">Verificar</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_tengo_cuenta">¡Ya tengo una cuenta!</string>
+    <string name="btn_contactanos">¡Escribenos tus dudas!</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_aprender">¡Quiero seguir aprendiendo!</string>
+    <string name="btn_introduccion">Intro</string>
+
+    <!-- nombres de Cajas de texto -->
+    <string name="et_nombre_usuario">Usuario:</string>
+    <string name="et_contrasena">Contraseña:</string>
+    <string name="et_repetir">Repita su contraseña:</string>
+    <string name="et_nombre">Nombre:</string>
+    <string name="et_buscador">Buscar en el Diccionario:</string>
+
+    <!-- nombres de etiquetas -->
+    <string name="tv_titulo_formulario">Formulario de Registro</string>
+    <string name="tv_porque_aprender">¿Por qué deseas aprender este idioma?</string>
+
+    <!-- nombres de botones de radio -->
+    <string name="rbtn_estudios">Estudios.</string>
+    <string name="rbtn_cultura">Cultura.</string>
+    <string name="rbtn_habilidad">Nueva habilidad.</string>
+    <string name="rbtn_otro">Otro.</string>
+
+    <!-- descripciones -->
+    <string name="slogan">Jaguar es cómo las personas aprenden Kichwa.</string>
+    <string name="descripcion_app">Apoyamos a una comunidad indígena para que más personas aprendan y compartan el idioma Kichwa.</string>
+    <string name="titulo_equipo">Equipo de Desarrollo</string>
+    <string name="dev_william">William Benalcázar</string>
+    <string name="dev_chris">Christian Mendieta</string>
+    <string name="dev_freddy">Freddy Pacheco</string>
+    <string name="dev_angel">Ángel Lucero</string>
+
+</resources>
