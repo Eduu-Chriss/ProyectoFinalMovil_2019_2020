@@ -25,7 +25,7 @@ public class ActividadRecyclerPlantilla {
     private String tema4;
     private boolean estado;
 
-    private final static ArrayList<ActividadRecyclerPlantilla> listaPlantillas = new ArrayList<>();
+    private final static ArrayList<ActividadRecyclerPlantilla> listaActividades = new ArrayList<>();
 
     public ActividadRecyclerPlantilla() {
 
@@ -33,9 +33,9 @@ public class ActividadRecyclerPlantilla {
 
     // ---------------------------------------------------------------------------------------------
 
-    public ArrayList<ActividadRecyclerPlantilla> getListaPlantillas(){
+    public static ArrayList<ActividadRecyclerPlantilla> getListaActividades(){
 
-        if(listaPlantillas.isEmpty()){
+        if(listaActividades.isEmpty()){
 
             ActividadRecyclerPlantilla actividad1 = new ActividadRecyclerPlantilla();
             ActividadRecyclerPlantilla actividad2 = new ActividadRecyclerPlantilla();
@@ -98,14 +98,14 @@ public class ActividadRecyclerPlantilla {
             actividad3.setTema4("Conjugar");
             actividad3.setEstado(false);
 
-            listaPlantillas.add(actividad1);
-            listaPlantillas.add(actividad2);
-            listaPlantillas.add(actividad3);
+            listaActividades.add(actividad1);
+            listaActividades.add(actividad2);
+            listaActividades.add(actividad3);
 
-            listaPlantillas.trimToSize();
+            listaActividades.trimToSize();
         }
 
-        return listaPlantillas;
+        return  listaActividades;
     }
 
     // ------------------------------------ SETTERS Y GETTERS --------------------------------------

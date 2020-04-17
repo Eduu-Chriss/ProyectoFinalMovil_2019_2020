@@ -21,7 +21,6 @@ public class HomeFragment extends Fragment{
 
     private View homeFragment;
     private RecyclerView contenedorActividades;
-    private final ActividadRecyclerPlantilla actividadRecyclerPlantilla = new ActividadRecyclerPlantilla();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,7 +43,7 @@ public class HomeFragment extends Fragment{
         LinearLayoutManager manager = new LinearLayoutManager(getContext());
         contenedorActividades.setLayoutManager(manager);
 
-        RecyclerViewActividadesAdapter adapter = new RecyclerViewActividadesAdapter(actividadRecyclerPlantilla.getListaPlantillas());
+        RecyclerViewActividadesAdapter adapter = new RecyclerViewActividadesAdapter(ActividadRecyclerPlantilla.getListaActividades());
 
         contenedorActividades.setAdapter(adapter);
     }
