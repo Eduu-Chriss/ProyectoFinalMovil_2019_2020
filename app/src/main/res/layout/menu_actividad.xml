@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlanco"
+    android:id="@+id/menu_nivel_idioma"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lección: "
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorVerdeAlternativo"/>
+
+        <TextView
+            android:id="@+id/tv_tares_completadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/10"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorTomate"/>
+
+        <Button
+            android:id="@+id/btn_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn_iniciar"
+            android:textSize="16dp"
+            android:background="@drawable/btn_borde_solido"
+            android:textColor="@color/colorPrincipal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/linea_verde"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_gramatica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/btn_sin_fondo"
+        android:drawableRight="@drawable/ic_gramatica"
+        android:paddingTop="10dp"
+        android:text="@string/btn_Gramatica"
+        android:textColor="@color/colorVerdeAlternativo"
+        android:textSize="13dp"
+        android:drawablePadding="10dp"/>
+
+
+</LinearLayout>

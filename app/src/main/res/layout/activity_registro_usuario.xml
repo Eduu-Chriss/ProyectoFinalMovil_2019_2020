@@ -188,7 +188,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         android:background="@drawable/btn_con_fondo"
-        android:textSize="16dp"/>
+        android:textSize="16dp"
+        android:onClick="registrar"/>
 
     <Button
         android:id="@+id/btn_regresar"

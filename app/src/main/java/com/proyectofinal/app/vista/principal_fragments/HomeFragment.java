@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.proyectofinal.app.R;
-import com.proyectofinal.app.modelo.NivelIdioma;
+import com.proyectofinal.app.modelo.Actividad;
 import com.proyectofinal.app.modelo.Tema;
-import com.proyectofinal.app.util.RecyclerViewNivelesAdapter;
+import com.proyectofinal.app.util.RecyclerViewActividadesAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class HomeFragment extends Fragment{
 
 
     private View homeFragment;
-    private RecyclerView contenedorNiveles;
+    private RecyclerView contenedorActividades;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,29 +29,29 @@ public class HomeFragment extends Fragment{
         homeFragment = inflater.inflate(R.layout.fragment_home, container, false);
 
         iniciarComponentes();
-        setVistaNiveles();
+        setVistaActividades();
 
         return homeFragment;
     }
 
     private void iniciarComponentes(){
 
-        contenedorNiveles = homeFragment.findViewById(R.id.contenedor_niveles);
+        contenedorActividades = homeFragment.findViewById(R.id.contenedor_niveles);
     }
 
-    private void setVistaNiveles(){
+    private void setVistaActividades(){
 
         LinearLayoutManager manager = new LinearLayoutManager(getContext());
-        contenedorNiveles.setLayoutManager(manager);
+        contenedorActividades.setLayoutManager(manager);
 
-        RecyclerViewNivelesAdapter adapter = new RecyclerViewNivelesAdapter(realizarPrubasRecyclerView());
+        RecyclerViewActividadesAdapter adapter = new RecyclerViewActividadesAdapter(realizarPrubasRecyclerView());
 
-        contenedorNiveles.setAdapter(adapter);
+        contenedorActividades.setAdapter(adapter);
     }
 
-    private List<NivelIdioma> realizarPrubasRecyclerView(){
+    private List<Actividad> realizarPrubasRecyclerView(){
 
-        List<NivelIdioma> listaNiveles = new ArrayList<>();
+        List<Actividad> listaNiveles = new ArrayList<>();
         List<Tema> listaTemas = new ArrayList<>();
         List<Tema> listaTemas2 = new ArrayList<>();
 
@@ -79,21 +79,25 @@ public class HomeFragment extends Fragment{
         tema5.setTitulo("Prendas");
         tema5.setImagen(R.mipmap.ic_prendas);
         tema5.setPorcentaje(0);
+        tema5.setImagenBloq(R.drawable.ic_prenda_bloq);
 
         Tema tema6 = new Tema();
         tema6.setTitulo("Animales");
         tema6.setImagen(R.mipmap.ic_animales);
         tema6.setPorcentaje(0);
+        tema6.setImagenBloq(R.drawable.ic_animales_bloq);
 
         Tema tema7 = new Tema();
         tema7.setTitulo("Enfermedades");
         tema7.setImagen(R.mipmap.ic_enfermedades);
         tema7.setPorcentaje(0);
+        tema7.setImagenBloq(R.drawable.ic_enfermedades_bloq);
 
         Tema tema8 = new Tema();
         tema8.setTitulo("Familia");
         tema8.setImagen(R.mipmap.ic_familia);
         tema8.setPorcentaje(0);
+        tema8.setImagenBloq(R.drawable.ic_familia_bloq);
 
         listaTemas.add(tema1);
         listaTemas.add(tema2);
@@ -104,12 +108,12 @@ public class HomeFragment extends Fragment{
         listaTemas2.add(tema7);
         listaTemas2.add(tema8);
 
-        NivelIdioma nivel1 = new NivelIdioma();
+        Actividad nivel1 = new Actividad();
         nivel1.setId(1);
         nivel1.setListaTemas(listaTemas);
         nivel1.setEstado(true);
 
-        NivelIdioma nivel2 = new NivelIdioma();
+        Actividad nivel2 = new Actividad();
         nivel2.setId(2);
         nivel2.setListaTemas(listaTemas2);
         nivel2.setEstado(false);

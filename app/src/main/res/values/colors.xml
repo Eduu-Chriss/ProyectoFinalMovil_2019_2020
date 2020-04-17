@@ -10,4 +10,5 @@
     <color name="colorVerdeAlternativo">#0D2C14</color>
     <color name="colorTomate">#E98E12</color>
     <color name="colorGris">#D6D6D6</color>
+    <color name="colorGrisBloqueo">#808080</color>
 </resources>

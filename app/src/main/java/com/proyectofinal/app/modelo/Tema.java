@@ -8,8 +8,9 @@ public class Tema {
     private int id;
     private String titulo;
     private int imagen;
+    private int imagenBloq;
     private int porcentaje;
-    private List<Tarea> listaTareas;
+    private List<Leccion> listaLeccions;
 
     // CONSTRUCTORES
 
@@ -17,12 +18,13 @@ public class Tema {
 
     }
 
-    public Tema(int id, String titulo, int imagen, int porcentaje, List<Tarea> listaTareas) {
+    public Tema(int id, String titulo, int imagen, int imagenBloq, int porcentaje, List<Leccion> listaLeccions) {
         this.id = id;
         this.titulo = titulo;
         this.imagen = imagen;
+        this.imagenBloq = imagenBloq;
         this.porcentaje = porcentaje;
-        this.listaTareas = listaTareas;
+        this.listaLeccions = listaLeccions;
     }
 
     // MÉTODOS SET Y GET
@@ -59,12 +61,20 @@ public class Tema {
         this.porcentaje = porcentaje;
     }
 
-    public List<Tarea> getListaTareas() {
-        return listaTareas;
+    public List<Leccion> getListaLeccions() {
+        return listaLeccions;
     }
 
-    public void setListaTareas(List<Tarea> listaTareas) {
-        this.listaTareas = listaTareas;
+    public void setListaLeccions(List<Leccion> listaLeccions) {
+        this.listaLeccions = listaLeccions;
+    }
+
+    public int getImagenBloq() {
+        return imagenBloq;
+    }
+
+    public void setImagenBloq(int imagenBloq) {
+        this.imagenBloq = imagenBloq;
     }
 
     // TO STRING

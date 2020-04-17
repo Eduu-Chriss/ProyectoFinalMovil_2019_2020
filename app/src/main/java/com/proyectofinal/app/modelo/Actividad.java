@@ -2,7 +2,7 @@ package com.proyectofinal.app.modelo;
 
 import java.util.List;
 
-public class NivelIdioma {
+public class Actividad {
 
     // VARIABLES
     private int id;
@@ -11,11 +11,11 @@ public class NivelIdioma {
     private List <Tema> listaTemas;
 
     //CONSTRUCTORES
-    public NivelIdioma() {
+    public Actividad() {
 
     }
 
-    public NivelIdioma(int id, int porcentaje, boolean estado, List<Tema> listaTemas) {
+    public Actividad(int id, int porcentaje, boolean estado, List<Tema> listaTemas) {
         this.id = id;
         this.porcentaje = porcentaje;
         this.estado = estado;
