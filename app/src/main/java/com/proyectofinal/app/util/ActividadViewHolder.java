@@ -14,7 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.proyectofinal.app.R;
-import com.proyectofinal.app.modelo.Actividad;
 
 
 public class ActividadViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
@@ -76,42 +75,42 @@ public class ActividadViewHolder extends RecyclerView.ViewHolder implements View
 
     /*Este método permite combiarle la logica a cada una de las vistas
      * del RecyclerView*/
-    public void bind(Actividad actividad){
+    public void bind(ActividadRecyclerPlantilla actividad){
 
-        btnActividad.setText(actividad.toString());
+        btnActividad.setText(actividad.getNumActividad());
         btnActividad.setEnabled(actividad.isEstado());
 
         ibtnTema1.setImageBitmap(BitmapFactory.decodeResource(
                 context.getResources(),
-                actividad.getListaTemas().get(0).getImagen()));
+                actividad.getImgTema1()));
         ibtnTema2.setImageBitmap(BitmapFactory.decodeResource(
                 context.getResources(),
-                actividad.getListaTemas().get(1).getImagen()));
+                actividad.getImgTema2()));
         ibtnTema3.setImageBitmap(BitmapFactory.decodeResource(
                 context.getResources(),
-                actividad.getListaTemas().get(2).getImagen()));
+                actividad.getImgTema3()));
         ibtnTema4.setImageBitmap(BitmapFactory.decodeResource(
                 context.getResources(),
-                actividad.getListaTemas().get(3).getImagen()));
+                actividad.getImgTema4()));
         ibtnTema1.setEnabled(actividad.isEstado());
         ibtnTema2.setEnabled(actividad.isEstado());
         ibtnTema3.setEnabled(actividad.isEstado());
-        ibtnTema3.setEnabled(actividad.isEstado());
+        ibtnTema4.setEnabled(actividad.isEstado());
 
-        progresoTema1.setProgress(actividad.getListaTemas().get(0).getPorcentaje());
-        progresoTema2.setProgress(actividad.getListaTemas().get(1).getPorcentaje());
-        progresoTema3.setProgress(actividad.getListaTemas().get(2).getPorcentaje());
-        progresoTema4.setProgress(actividad.getListaTemas().get(3).getPorcentaje());
+        progresoTema1.setProgress(actividad.getPorcentajeTema1());
+        progresoTema2.setProgress(actividad.getPorcentajeTema2());
+        progresoTema3.setProgress(actividad.getPorcentajeTema3());
+        progresoTema4.setProgress(actividad.getPorcentajeTema4());
 
         progresoTema1.setEnabled(actividad.isEstado());
         progresoTema2.setEnabled(actividad.isEstado());
         progresoTema3.setEnabled(actividad.isEstado());
         progresoTema4.setEnabled(actividad.isEstado());
 
-        tvTema1.setText(actividad.getListaTemas().get(0).getTitulo());
-        tvTema2.setText(actividad.getListaTemas().get(1).getTitulo());
-        tvTema3.setText(actividad.getListaTemas().get(2).getTitulo());
-        tvTema4.setText(actividad.getListaTemas().get(3).getTitulo());
+        tvTema1.setText(actividad.getTema1());
+        tvTema2.setText(actividad.getTema2());
+        tvTema3.setText(actividad.getTema3());
+        tvTema4.setText(actividad.getTema4());
 
         tvTema1.setEnabled(actividad.isEstado());
         tvTema2.setEnabled(actividad.isEstado());
@@ -135,10 +134,10 @@ public class ActividadViewHolder extends RecyclerView.ViewHolder implements View
             tvTema3.setTextColor(Color.parseColor("#808080"));
             tvTema4.setTextColor(Color.parseColor("#808080"));
 
-            ibtnTema1.setImageResource(actividad.getListaTemas().get(0).getImagenBloq());
-            ibtnTema2.setImageResource(actividad.getListaTemas().get(1).getImagenBloq());
-            ibtnTema3.setImageResource(actividad.getListaTemas().get(2).getImagenBloq());
-            ibtnTema4.setImageResource(actividad.getListaTemas().get(3).getImagenBloq());
+            ibtnTema1.setImageResource(actividad.getImgTema1Bloq());
+            ibtnTema2.setImageResource(actividad.getImgTema2Bloq());
+            ibtnTema3.setImageResource(actividad.getImgTema3Bloq());
+            ibtnTema4.setImageResource(actividad.getImgTema4Bloq());
         }else{
 
             btnActividad.setBackgroundResource(R.drawable.ic_nivel);
