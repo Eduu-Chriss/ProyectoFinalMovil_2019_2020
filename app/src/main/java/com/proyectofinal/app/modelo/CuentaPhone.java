@@ -108,7 +108,7 @@ public class CuentaPhone {
 
     public String getNombreUsuario(){
 
-        String nombreUsuario="";
+        String nombreUsuario="admin";
         return nombreUsuario;
     }
 

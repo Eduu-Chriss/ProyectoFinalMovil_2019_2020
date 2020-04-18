@@ -37,5 +37,10 @@ public class SqlUtils {
                 contrasena + "';";
     }
 
+    public static String selectUsuario(String correo) {
+
+        return "select * from CuentaUsuario where correo='" + correo + "'";
+    }
+
 }
 

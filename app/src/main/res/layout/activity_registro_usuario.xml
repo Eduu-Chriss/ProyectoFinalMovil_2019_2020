@@ -1,211 +1,292 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.proyectofinal.app.activities.RegistroUsuarioActivity"
-    android:background="@color/colorBlanco">
+    android:background="@color/colorBlanco"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:drawableLeft="@mipmap/jaguar_icon"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:text="@string/tv_titulo_formulario"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrincipal"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/et_nombre"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:backgroundTint="@color/colorPrincipal"
-        android:ems="10"
-        android:hint="@string/et_nombre"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:textColor="@color/colorNegro"
-        android:textColorHint="@color/colorPrincipal"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/et_contrasena"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:backgroundTint="@color/colorPrincipal"
-        android:ems="10"
-        android:hint="@string/et_contrasena"
-        android:inputType="textPassword"
-        android:paddingLeft="5dp"
-        android:textColor="@color/colorNegro"
-        android:textColorHint="@color/colorPrincipal"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_correo" />
-
-    <EditText
-        android:id="@+id/et_correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:backgroundTint="@color/colorPrincipal"
-        android:ems="10"
-        android:hint="@string/et_nombre_usuario"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:textColor="@color/colorNegro"
-        android:textColorHint="@color/colorPrincipal"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
-
-    <EditText
-        android:id="@+id/et_repetir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:backgroundTint="@color/colorPrincipal"
-        android:ems="10"
-        android:hint="@string/et_repetir"
-        android:inputType="textPassword"
-        android:paddingLeft="5dp"
-        android:textColor="@color/colorNegro"
-        android:textColorHint="@color/colorPrincipal"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_contrasena" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="22dp"
-        android:text="@string/tv_porque_aprender"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrincipal"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_repetir" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        android:layout_height="wrap_content">
 
 
-        <RadioButton
-            android:id="@+id/rbtn_estudios"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rbtn_estudios"
-            android:textColor="@color/colorPrincipal"
-            android:textSize="16dp"
-            android:buttonTint="@color/colorVerdeAlternativo"
-            android:padding="6dp"
-            android:layout_marginLeft="10dp"
-            android:checked="true"/>
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <RadioButton
-            android:id="@+id/rbtn_cultura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rbtn_cultura"
-            android:textColor="@color/colorPrincipal"
-            android:textSize="16dp"
-            android:buttonTint="@color/colorVerdeAlternativo"
-            android:padding="6dp"
-            android:layout_marginLeft="10dp"/>
 
-        <RadioButton
-            android:id="@+id/rbtn_nueva_habilidad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rbtn_habilidad"
-            android:textColor="@color/colorPrincipal"
-            android:textSize="16dp"
-            android:buttonTint="@color/colorVerdeAlternativo"
-            android:padding="6dp"
-            android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:drawableLeft="@mipmap/jaguar_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/tv_titulo_formulario"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrincipal"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/rbtn_otro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rbtn_otro"
-            android:textColor="@color/colorPrincipal"
-            android:textSize="16dp"
-            android:buttonTint="@color/colorVerdeAlternativo"
-            android:padding="6dp"
-            android:layout_marginLeft="10dp"/>
-    </RadioGroup>
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:backgroundTint="@color/colorPrincipal"
+                android:ems="10"
+                android:hint="@string/et_nombre"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorNegro"
+                android:textColorHint="@color/colorPrincipal"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/btn_registrarme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="22dp"
-        android:text="@string/btn_registrarme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        android:background="@drawable/btn_con_fondo"
-        android:textSize="16dp"
-        android:onClick="registrar"/>
 
-    <Button
-        android:id="@+id/btn_regresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:background="@drawable/btn_sin_fondo"
-        android:drawableLeft="@drawable/ic_regresar"
-        android:drawablePadding="10dp"
-        android:text="@string/btn_tengo_cuenta"
-        android:textColor="@color/colorVerdeAlternativo"
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_registrarme" />
+            <EditText
+                android:id="@+id/et_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:backgroundTint="@color/colorPrincipal"
+                android:ems="10"
+                android:hint="@string/et_nombre_usuario"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorNegro"
+                android:textColorHint="@color/colorPrincipal"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <EditText
+                android:id="@+id/et_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:backgroundTint="@color/colorPrincipal"
+                android:ems="10"
+                android:hint="@string/et_contrasena"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorNegro"
+                android:textColorHint="@color/colorPrincipal"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_correo" />
+
+            <EditText
+                android:id="@+id/et_repetir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:backgroundTint="@color/colorPrincipal"
+                android:ems="10"
+                android:hint="@string/et_repetir"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorNegro"
+                android:textColorHint="@color/colorPrincipal"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_contrasena" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="22dp"
+                android:text="@string/tv_porque_aprender"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrincipal"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_repetir" />
+
+            <RadioGroup
+                android:id="@+id/rgroup_motivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+                <RadioButton
+                    android:id="@+id/rbtn_estudios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtn_estudios"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn_cultura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtn_cultura"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn_nueva_habilidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtn_habilidad"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn_otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbtn_otro"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="22dp"
+                android:text="¿A qué genero perteneces?"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrincipal"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_repetir" />
+
+            <RadioGroup
+                android:id="@+id/rgroup_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+                <RadioButton
+                    android:id="@+id/rbtn_masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn_femenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn_sin_genero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prefiero no decirlo"
+                    android:textColor="@color/colorPrincipal"
+                    android:textSize="16dp"
+                    android:buttonTint="@color/colorVerdeAlternativo"
+                    android:padding="6dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_registrarme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/btn_con_fondo"
+                android:text="@string/btn_registrarme"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgroup_motivo" />
+
+            <Button
+                android:id="@+id/btn_regresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/btn_sin_fondo"
+                android:drawableLeft="@drawable/ic_regresar"
+                android:drawablePadding="10dp"
+                android:text="@string/btn_tengo_cuenta"
+                android:textColor="@color/colorVerdeAlternativo"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_registrarme" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

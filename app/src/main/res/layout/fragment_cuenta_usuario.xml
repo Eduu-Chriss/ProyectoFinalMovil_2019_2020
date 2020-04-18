@@ -154,7 +154,7 @@
                    android:layout_margin="5dp"/>
 
                <TextView
-                   android:id="@+id/et_porcentaje"
+                   android:id="@+id/tv_porcentaje"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="100%"
@@ -202,7 +202,7 @@
                />
 
            <RadioGroup
-               android:id="@+id/radioGroup"
+               android:id="@+id/rgroup_motivo"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="10dp"
@@ -211,10 +211,10 @@
                android:layout_marginBottom="20dp">
 
                <RadioButton
-                   android:id="@+id/rbtn_15"
+                   android:id="@+id/rbtn_1"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="15 minutos."
+                   android:text="1 Tarea."
                    android:textColor="@color/colorPrincipal"
                    android:textSize="16dp"
                    android:buttonTint="@color/colorVerdeAlternativo"
@@ -223,10 +223,10 @@
                    android:checked="true"/>
 
                <RadioButton
-                   android:id="@+id/rbtn_30"
+                   android:id="@+id/rbtn_2"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="30 minutos."
+                   android:text="2 Tareas."
                    android:textColor="@color/colorPrincipal"
                    android:textSize="16dp"
                    android:buttonTint="@color/colorVerdeAlternativo"
@@ -234,10 +234,10 @@
                    android:layout_marginLeft="10dp"/>
 
                <RadioButton
-                   android:id="@+id/rbtn_45"
+                   android:id="@+id/rbtn_3"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="45 minutos."
+                   android:text="4 Tareas."
                    android:textColor="@color/colorPrincipal"
                    android:textSize="16dp"
                    android:buttonTint="@color/colorVerdeAlternativo"
@@ -245,10 +245,10 @@
                    android:layout_marginLeft="10dp"/>
 
                <RadioButton
-                   android:id="@+id/rbtn_60"
+                   android:id="@+id/rbtn_4"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="60 minutos."
+                   android:text="8 Tareas."
                    android:textColor="@color/colorPrincipal"
                    android:textSize="16dp"
                    android:buttonTint="@color/colorVerdeAlternativo"

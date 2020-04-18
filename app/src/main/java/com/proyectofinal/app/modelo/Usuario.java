@@ -10,6 +10,10 @@ public class Usuario {
     private String contrasena;
     private String motivo;
 
+    public static final String AVATAR_HOMBRE = "urlAvatarHombre";
+    public static final String AVATAR_MUJER = "urlAvatarMujer";
+    public static final String AVATAR_INDIFERENTE = "urlAvatarPrefieroNoDecirlo";
+
     public Usuario() {
 
     }
