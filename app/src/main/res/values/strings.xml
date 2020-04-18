@@ -18,7 +18,7 @@
     <string name="btn_introduccion">Intro</string>
 
     <!-- nombres de Cajas de texto -->
-    <string name="et_nombre_usuario">Usuario:</string>
+    <string name="et_nombre_usuario">Correo:</string>
     <string name="et_contrasena">Contraseña:</string>
     <string name="et_repetir">Repita su contraseña:</string>
     <string name="et_nombre">Nombre:</string>
