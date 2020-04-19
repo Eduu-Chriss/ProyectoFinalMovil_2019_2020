@@ -4,7 +4,7 @@ import com.proyectofinal.app.R;
 
 import java.util.ArrayList;
 
-public class ActividadRecyclerPlantilla {
+public class ActividadView {
     
     private String numActividad;
     private int imgTema1;
@@ -25,21 +25,21 @@ public class ActividadRecyclerPlantilla {
     private String tema4;
     private boolean estado;
 
-    private final static ArrayList<ActividadRecyclerPlantilla> listaActividades = new ArrayList<>();
+    private final static ArrayList<ActividadView> listaActividades = new ArrayList<>();
 
-    public ActividadRecyclerPlantilla() {
+    public ActividadView() {
 
     }
 
     // ---------------------------------------------------------------------------------------------
 
-    public static ArrayList<ActividadRecyclerPlantilla> getListaActividades(){
+    public static ArrayList<ActividadView> getListaActividades(){
 
         if(listaActividades.isEmpty()){
 
-            ActividadRecyclerPlantilla actividad1 = new ActividadRecyclerPlantilla();
-            ActividadRecyclerPlantilla actividad2 = new ActividadRecyclerPlantilla();
-            ActividadRecyclerPlantilla actividad3 = new ActividadRecyclerPlantilla();
+            ActividadView actividad1 = new ActividadView();
+            ActividadView actividad2 = new ActividadView();
+            ActividadView actividad3 = new ActividadView();
 
             actividad1.setNumActividad("1");
             actividad1.setImgTema1(R.mipmap.ic_saludo);

@@ -75,7 +75,7 @@ public class ActividadViewHolder extends RecyclerView.ViewHolder implements View
 
     /*Este método permite combiarle la logica a cada una de las vistas
      * del RecyclerView*/
-    public void bind(ActividadRecyclerPlantilla actividad){
+    public void bind(ActividadView actividad){
 
         btnActividad.setText(actividad.getNumActividad());
         btnActividad.setEnabled(actividad.isEstado());

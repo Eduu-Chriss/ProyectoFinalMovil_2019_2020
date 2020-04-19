@@ -12,7 +12,6 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.proyectofinal.app.R;
-import com.proyectofinal.app.util.BDHelper;
 
 public class CuentaUsuarioFragment extends Fragment {
 
@@ -46,13 +45,6 @@ public class CuentaUsuarioFragment extends Fragment {
         tvNivel = cuentaUsuarioFragment.findViewById(R.id.tv_nombre_nivel);
         tvProgresoTotal = cuentaUsuarioFragment.findViewById(R.id.tv_porcentaje);
         progresoTotal = cuentaUsuarioFragment.findViewById(R.id.progreso_idioma);
-
-        tvUsuario.setText(BDHelper.cuentaPhone.toString());
-        tvNombre.setText(BDHelper.cuentaPhone.getNombre());
-        tvNivel.setText("Nivel "+BDHelper.cuentaPhone.getNivel());
-        tvProgresoTotal.setText(BDHelper.cuentaPhone.getPorcentajeTotal()+"%");
-        progresoTotal.setProgress(BDHelper.cuentaPhone.getPorcentajeTotal());
-
     }
 
 }

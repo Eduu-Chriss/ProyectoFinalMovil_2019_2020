@@ -13,12 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.proyectofinal.app.R;
-import com.proyectofinal.app.util.ActividadRecyclerPlantilla;
-import com.proyectofinal.app.util.BDHelper;
-import com.proyectofinal.app.util.RecyclerViewActividadesAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.proyectofinal.app.util.ActividadView;
+import com.proyectofinal.app.util.RecyclerActividadAdapter;
 
 public class HomeFragment extends Fragment{
 
@@ -49,10 +45,6 @@ public class HomeFragment extends Fragment{
         progresoIntro = homeFragment.findViewById(R.id.progreso_intro);
         tvProgresoTotal = homeFragment.findViewById(R.id.tv_porcentaje_total);
         contenedorActividades = homeFragment.findViewById(R.id.contenedor_niveles);
-
-        progresoTotal.setProgress(BDHelper.cuentaPhone.getPorcentajeTotal());
-        progresoIntro.setProgress(BDHelper.cuentaPhone.getPorcentajeIntro());
-        tvProgresoTotal.setText(BDHelper.cuentaPhone.getPorcentajeTotal()+"%");
     }
 
     private void setVistaActividades(){
@@ -60,7 +52,7 @@ public class HomeFragment extends Fragment{
         LinearLayoutManager manager = new LinearLayoutManager(getContext());
         contenedorActividades.setLayoutManager(manager);
 
-        RecyclerViewActividadesAdapter adapter = new RecyclerViewActividadesAdapter(ActividadRecyclerPlantilla.getListaActividades());
+        RecyclerActividadAdapter adapter = new RecyclerActividadAdapter(ActividadView.getListaActividades());
 
         contenedorActividades.setAdapter(adapter);
     }

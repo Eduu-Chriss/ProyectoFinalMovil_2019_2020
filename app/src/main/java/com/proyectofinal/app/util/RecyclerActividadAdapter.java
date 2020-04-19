@@ -11,15 +11,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.proyectofinal.app.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class RecyclerViewActividadesAdapter extends RecyclerView.Adapter<ActividadViewHolder>{
+public class RecyclerActividadAdapter extends RecyclerView.Adapter<ActividadViewHolder>{
 
     // VARIABLES
-    private ArrayList<ActividadRecyclerPlantilla> listaActividades;
+    private ArrayList<ActividadView> listaActividades;
 
     // CONSTRUCTOR
-    public RecyclerViewActividadesAdapter(ArrayList<ActividadRecyclerPlantilla> listaActividades) {
+    public RecyclerActividadAdapter(ArrayList<ActividadView> listaActividades) {
         this.listaActividades = listaActividades;
     }
 
